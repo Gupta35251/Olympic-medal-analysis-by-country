@@ -1,31 +1,169 @@
-(AI/ML) Python project to analyze Olympic medal trends across countries using pandas and matplotlib.
-# Olympic Medal Analysis by country🏅
+# 🏅 Olympic Medal Analysis with GenAI
 
-This Python project analyzes over 120 years of Olympic medal data to compare country-wise performance using `pandas`, `matplotlib`, and `seaborn`.
+A complete **data analysis + Generative AI project** that analyzes Olympic medal data and generates human-like insights using LLMs.
+
+---
+
+## 🚀 Project Overview
+
+This project combines:
+
+* 📊 Data Analysis using **Pandas**
+* 📈 Visualization using **Matplotlib & Seaborn**
+* 🤖 AI-generated insights using **LLM (Groq + LangChain)**
+
+It performs:
+
+* Country-wise medal analysis
+* Year-wise trends
+* Sport-wise breakdown
+* AI-generated summary reports
+
+---
+
+## 📂 Project Structure
+
+```
+olympic_analysis/
+├── graphs/      # Saved charts (.png)
+├── reports/     # AI-generated analysis (.txt)
+├── logs/        # Execution logs
+```
+
+---
 
 ## 📊 Features
-- Displays Top 10 Olympic medal-winning countries
-- Dynamic analysis: Easily extendable to Top 20, 30, or more
-- Visualizations created using Matplotlib (stacked bar charts)
-- Clean filtering of data to include only medal winners
 
-## 📂 Files in This Repo
-- `olympic_analysis.py` – Python code for data analysis
-- `README.md` – Overview and explanation
+### 1. Top Countries Analysis
 
-## 📥 Dataset
-The dataset is not included here due to size limitations.  
-You can download it directly from Kaggle:
+* Displays top N countries by total medals
+* Stacked bar chart (Gold, Silver, Bronze)
 
-🔗 [120 Years of Olympic History - Kaggle](https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results)
+### 2. Year-wise Trend
 
-## 🎥 Demo Video
+* Medal trend over years for a selected country
 
-Watch my screen recording showing Top 10, 20, and 30 countries:
-▶️ [Watch the project demo on Google Drive](https://drive.google.com/file/d/1tH_9rwNVJsNWXXVnHtYb-03IfgY8mLqN/view?usp=drivesdk)
+### 3. Sport-wise Distribution
 
-## 🧠 Skills Used
-- Python Programming
-- Data Analysis with Pandas
-- Data Visualization with Matplotlib & Seaborn
-- CSV Handling & Grouping
+* Top sports contributing to medals
+
+### 4. GenAI Integration 🤖
+
+* Uses LLM to generate:
+
+  * Insights
+  * Patterns
+  * Key observations
+
+---
+
+## ⚙️ Tech Stack
+
+* Python 🐍
+* pandas
+* matplotlib
+* seaborn
+* LangChain
+* Groq
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Olympic-medal-analysis-by-country.git
+cd Olympic-medal-analysis-by-country
+```
+
+---
+
+### 2. Install dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn langchain langchain-core langchain-groq
+```
+
+---
+
+### 3. Add Dataset
+
+Place:
+
+```
+athlete_events.csv
+```
+
+in the root folder.
+
+---
+
+### 4. Add API Key
+
+Edit config:
+
+```python
+"groq_api_key": "your_api_key_here"
+```
+
+---
+
+### 5. Run the project
+
+```bash
+python olympic_analysis.py
+```
+
+---
+
+## 📈 Output
+
+After running, you’ll get:
+
+* 📊 Graphs → `olympic_analysis/graphs/`
+* 📝 AI Report → `olympic_analysis/reports/`
+* 🪵 Logs → `olympic_analysis/logs/`
+
+---
+
+## 🧠 How GenAI is Used
+
+The project:
+
+1. Generates structured data summaries
+2. Sends them to an LLM
+3. Produces human-readable explanations
+
+Example output:
+
+> "USA shows a consistent rise in medal count over the years, indicating strong athletic dominance..."
+
+---
+
+## 🔥 Key Highlights
+
+* End-to-end pipeline (Data → Visualization → AI Insight)
+* Clean modular structure
+* Real-world dataset
+* Resume-ready project
+
+---
+
+## 📌 Future Improvements
+
+* Add user input (country selection)
+* Convert to web app (Streamlit)
+* Add predictive ML models
+
+---
+
+## 👨‍💻 Author
+
+Your Name
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
